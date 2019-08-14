@@ -1,0 +1,214 @@
+header {
+    width: 100%;
+    height: 70px;
+    background-color: rgb(51, 51, 51);
+    .container {
+        max-width: 1200px;
+        height: 70px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+        font-size: 1.5rem;
+        .header-left {
+            display: flex;
+            height: 70px;
+            align-items: center;
+            img {
+                display: inline-block;
+                width: 203px;
+            }
+        }
+        .nav-bar {
+            display: flex;
+            height: 70px;
+            align-items: center;
+            .btn-nav-menu > a {
+                display: inline-block;
+                margin: 0 20px;
+                &::after {
+                    content: '';
+                    display: inline-block;
+                    width: 100%;
+                    height: 3px;
+                    background-color: green;
+                    visibility: hidden;
+                }
+                &:hover + &::after {
+                    visibility: visible;
+                }
+            }
+            .dropdown-menu {
+                width: 1200px;
+                height: 702px;
+                position: absolute;
+                top: 70px;
+                left: 0;
+                background-color: skyblue;
+                color: rgb(255, 255, 255);
+                border-radius: 5px;
+                .btn-nav-heading {
+                    width: 100%;
+                    height: 100px;
+                    padding: 20px 20px 0;
+                    background-color: rgb(85, 85, 85);
+                    h2 {
+                        margin-bottom: 18px;
+                        font-size: 1.9rem;
+                    }
+                    p {
+                        height: 18px;
+                        font-size: 1.3rem;
+                    }
+                }
+                .btn-nav-inner {
+                    width: 100%;
+                    padding: 15px 0 5px;
+                    background-color: rgb(51, 51, 51);
+                    .category {
+                        display: flex;
+                        height: 38px;
+                        margin: 0 15px 11.25px;
+                        border-bottom: 1px solid silver;
+                        align-items: center;
+                        flex-wrap: wrap;
+                        > a {
+                            display: inline-block;
+                            width: 1170px;
+                            height: 37px;
+                            padding: 8px;
+                            font-size: 1.5rem;
+                            color: rgb(255, 255, 255);
+                            line-height: 21px;
+                            &:hover {
+                                color: #555;
+                                background: #fff;
+                                transition: 0.5s;
+
+                            }
+                        }
+                    }
+                    ul {
+                        display: flex;
+                        max-width: 1170px;
+                        height: 41px;
+                        margin: 0 15px;
+                        li {
+                            width: 25%;
+                            white-space: nowrap;
+                            vertical-align: center;
+                            a {
+                                display: inline-block;
+                                width: 100%;
+                                height: 41px;
+                                padding: 10px 8px;
+                                line-height: 21px;
+                                &:hover {
+                                    color: #555;
+                                    background: #fff;
+                                    transition: 0.5s;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+
+// header {
+//     width: 100%;
+//     height: 70px;
+//     background-color: rgb(51,51,51);
+// }
+
+// .container {
+//     justify-content: space-between;
+//     width: 1170px;
+//     margin: 0 auto;
+//     /* color: rgb(221, 221, 221); 質問；なぜここにcolorを入れても反映されない？*/
+// }
+
+// header > .container {
+//     display: flex;
+//     /* align-items: flex-end; */
+// }
+
+// .container a {
+//     color: rgba(221, 221, 221, 0.8);
+// }
+
+// .header-left {
+//     height: 70px;
+// }
+
+// .logo {
+//     display: inline-block;
+//     width: 203px;
+//     font-size: 2rem;
+//     padding-top: 22px;
+//     /* height: 70px; */
+//     /* line-height: 35.2px; */
+//     /* margin-top: 17.5px; */
+//     /* vertical-align: middle; */
+// }
+
+// .logo span {
+//     font-weight: bold;
+// }
+
+// .header-right {
+//     height: 70px;
+// }
+
+// .header-right li {
+//     height: 70px;
+//     margin: 0
+// }
+
+// /* .link {
+//     color: inherit;
+// } */
+
+// ul {
+//     display: flex;
+//     margin: 0
+// }
+
+// .link {
+//     display: inline-block;
+//     /* height: 21px; */
+//     margin: 24.5px;
+//     white-space: nowrap;
+//     font-size: 1.5rem;
+//     margin: 20px;
+//     transition: transform 0.3s;
+// }
+
+// .link:hover::after {
+//     content: '';
+//     display: block;
+//     margin: 6px auto 0;
+//     border-bottom: 3px solid #5cb85c;
+//     /* 質問；hoverした時に最後のlog-inだけ除外する方法は？ */
+//     /* 質問；hoverした時に下からニュルッと出す方法は？ */
+// }
+
+// .choice-showy {
+//     border-left: 1px solid rgb(221, 221, 221);
+//     border-right: 1px solid rgb(221, 221, 221);
+// }
+
+// .log-in {
+//     padding: 8px 12px;
+//     border: 1px solid rgb(85, 85, 85);
+//     padding: 8px 12px;
+// }
+
+// .link:hover {
+//     color: rgba(221, 221, 221, 1.0)
+
+// }
