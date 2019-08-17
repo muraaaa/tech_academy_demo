@@ -23,96 +23,134 @@ header {
             display: flex;
             height: 70px;
             align-items: center;
-            .btn-nav-menu > a {
+            .dropdown.btn-nav-menu {
                 display: inline-block;
-                margin: 0 20px;
-                &::after {
-                    content: '';
+                height: 70px;
+                .link {
                     display: inline-block;
-                    width: 100%;
-                    height: 3px;
-                    background-color: green;
-                    visibility: hidden;
-                }
-                &:hover + &::after {
-                    visibility: visible;
-                }
-            }
-            .dropdown-menu {
-                width: 1200px;
-                height: 702px;
-                position: absolute;
-                top: 70px;
-                left: 0;
-                background-color: skyblue;
-                color: rgb(255, 255, 255);
-                border-radius: 5px;
-                .btn-nav-heading {
-                    width: 100%;
-                    height: 100px;
-                    padding: 20px 20px 0;
-                    background-color: rgb(85, 85, 85);
-                    h2 {
-                        margin-bottom: 18px;
-                        font-size: 1.9rem;
+                    height: 70px;
+                    padding: 27.5px 0;
+                    margin: 0 20px;
+                    position: relative;
+                    &::after {
+                        content: '';
+                        display: block;
+                        width: 100%;
+                        height: 3px;
+                        position: absolute;
+                        top: 60px;
+                        left: 0;
+                        background-color: green;
+                        opacity: 0;
                     }
-                    p {
-                        height: 18px;
-                        font-size: 1.3rem;
+                    &:hover::after {
+                        opacity: 1;
+                        transition: all 0.5s ease;
+                        transform: translateY(-10px);
                     }
                 }
-                .btn-nav-inner {
-                    width: 100%;
-                    padding: 15px 0 5px;
-                    background-color: rgb(51, 51, 51);
-                    .category {
-                        display: flex;
-                        height: 38px;
-                        margin: 0 15px 11.25px;
-                        border-bottom: 1px solid silver;
-                        align-items: center;
-                        flex-wrap: wrap;
-                        > a {
-                            display: inline-block;
-                            width: 1170px;
-                            height: 37px;
-                            padding: 8px;
-                            font-size: 1.5rem;
-                            color: rgb(255, 255, 255);
-                            line-height: 21px;
-                            &:hover {
-                                color: #555;
-                                background: #fff;
-                                transition: 0.5s;
-
-                            }
+                .link.for-company {
+                    padding-right:20px;
+                    padding-left:20px;
+                    border-right: 1px solid rgb(85, 85, 85);
+                    border-left: 1px solid rgb(85, 85, 85);
+                }
+                .link.log-in {
+                    display: block;
+                    height: 39px;
+                    padding: 8px 12px;
+                    margin: 15px 0;
+                    border: 1px solid rgb(119, 119, 119);
+                    line-height: 21px;
+                    font-size: 1.3rem;
+                    &:hover {
+                        color:#fff;
+                    }
+                    &::after {
+                        display:none;
+                    }
+                }
+                .dropdown-menu {
+                    display: none;
+                    width: 1200px;
+                    height: 702px;
+                    position: absolute;
+                    top: 70px;
+                    left: 0;
+                    background-color: skyblue;
+                    color: rgb(255, 255, 255);
+                    border-radius: 5px;
+                    overflow: hidden;
+                    .btn-nav-heading {
+                        width: 100%;
+                        height: 100px;
+                        padding: 20px 20px 0;
+                        background-color: rgb(85, 85, 85);
+                        h2 {
+                            margin-bottom: 18px;
+                            font-size: 1.9rem;
+                        }
+                        p {
+                            height: 18px;
+                            font-size: 1.3rem;
                         }
                     }
-                    ul {
-                        display: flex;
-                        max-width: 1170px;
-                        height: 41px;
-                        margin: 0 15px;
-                        li {
-                            width: 25%;
-                            white-space: nowrap;
-                            vertical-align: center;
-                            a {
+                    .btn-nav-inner {
+                        width: 100%;
+                        padding: 15px 0 5px;
+                        background-color: rgb(51, 51, 51);
+                        .category {
+                            display: flex;
+                            height: 38px;
+                            margin: 0 15px 11.25px;
+                            border-bottom: 1px solid silver;
+                            align-items: center;
+                            flex-wrap: wrap;
+                            > a {
                                 display: inline-block;
-                                width: 100%;
-                                height: 41px;
-                                padding: 10px 8px;
+                                width: 1170px;
+                                height: 37px;
+                                padding: 8px;
+                                font-size: 1.5rem;
+                                color: rgb(255, 255, 255);
                                 line-height: 21px;
                                 &:hover {
                                     color: #555;
                                     background: #fff;
                                     transition: 0.5s;
+
+                                }
+                            }
+                        }
+                        ul {
+                            display: flex;
+                            max-width: 1170px;
+                            height: 41px;
+                            margin: 0 15px;
+                            li {
+                                width: 25%;
+                                white-space: nowrap;
+                                vertical-align: center;
+                                a {
+                                    display: inline-block;
+                                    width: 100%;
+                                    height: 41px;
+                                    padding: 10px 8px;
+                                    line-height: 21px;
+                                    &:hover {
+                                        color: #555;
+                                        background: #fff;
+                                        transition: 0.5s;
+                                    }
                                 }
                             }
                         }
                     }
                 }
-            }
+                &:hover > .dropdown-menu{
+                    display: block;
+                }
+            }    
         }
     }
 
