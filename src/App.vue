@@ -2,7 +2,7 @@
   <header>
       <div class="container">
           <div class="header-left">
-              <a class="logo" href="#"><img src="./assets/logo.png"></a>
+              <a class="logo" href="#"><img src="@/assets/logo.png"></a>
           </div>
           <div class="header-right">
               <ul class="nav-bar">
@@ -41,7 +41,7 @@
                               <i class="fa fa-fw fa-diamond fa-l"></i>
                               Webアプリケーションコース
                             </a>
-                          </li> 
+                          </li>
                         </ul>
                         <ul>
                           <li>
@@ -67,7 +67,7 @@
                               <i class="fa fa-fw fa-diamond fa-l"></i>
                               Webアプリケーションコース
                             </a>
-                          </li> 
+                          </li>
                         </ul>
                       </div>
                     </div>
@@ -77,26 +77,25 @@
                   <li class="dropdown btn-nav-menu"><a class="link" href="#">転職サポート</a></li>
                   <li class="dropdown btn-nav-menu"><a class="link for-company" href="#">法人のお客様</a></li>
                   <li class="dropdown btn-nav-menu"><a class="link log-in" href="#">ログイン</a></li>
-              </ul> 
+              </ul>
           </div>
       </div>
 
     <!-- 海の日キャンペーン -->
       <section id="campaign">
-        <img src="⁨./assets/title.png" alt="キャンペーン">
-        <!--  質問：画像が反映されないのは何故？-->
+        <img src="@/assets/title.png" alt="キャンペーン">
         <p class="campaign-text">
             ブートキャンプの8・１２・16・24週間プランのいずれかに
             お申し込みいただくと、<br>もれなく「はじめてのプログラミングコース」のカリキュラムをプレゼント！<br>海の日までのお得なキャンペーンです。
         </p>
         <p class="reminder">残りわずか！お早めに</p>
         <a class="campaigned-course" href="#">対象となるコースを見る</a>
-      </section> 
+      </section>
 
      <!-- 受賞 -->
     <section class="advs">
         <div class="award">
-            <img src="img/awards.png" alt="受賞">
+            <img src="@/assets/awards.png" alt="受賞">
             <p>第１３回日本e-learning大賞<br>プログラミング教育特別部門賞</p>
         </div>
         <div class="payment">
@@ -284,7 +283,7 @@
             </tbody>
         </table>
     </section>
-    
+
 
     <!-- footer -->
     <footer id="footer">
@@ -309,7 +308,7 @@
         </div>
     </footer>
 
-  </header>    
+  </header>
 </template>
 
 <script>
