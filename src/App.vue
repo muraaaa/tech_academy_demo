@@ -1,89 +1,89 @@
 <template>
   <header>
-      <div class="container">
-          <div class="header-left">
-              <a class="logo" href="#"><img src="./assets/logo.png"></a>
-          </div>
-          <div class="header-right">
-              <ul class="nav-bar">
-                  <li class="dropdown btn-nav-menu">
-                    <a class="link" href="#">コース</a>
-                    <div class="dropdown-menu">
-                      <div class="btn-nav-heading">
-                        <h2>コース</h2>
-                        <p>プログラミング・アプリ開発・デザインなど豊富なコースをご用意</p>
-                      </div>
-                      <div class="btn-nav-inner">
-                        <div class="category">
-                          <a href="#">プログラミング</a>
-                        </div>
-                        <ul>
-                          <li>
-                            <a class="btn-course">
-                              <i class="fa fa-fw fa-diamond fa-l"></i>
-                              Webアプリケーションコース
-                            </a>
-                          </li>
-                          <li>
-                            <a class="btn-course">
-                              <i class="fa fa-fw fa-diamond fa-l"></i>
-                              Webアプリケーションコース
-                            </a>
-                          </li>
-                          <li>
-                            <a class="btn-course">
-                              <i class="fa fa-fw fa-diamond fa-l"></i>
-                              Webアプリケーションコース
-                            </a>
-                          </li>
-                          <li>
-                            <a class="btn-course">
-                              <i class="fa fa-fw fa-diamond fa-l"></i>
-                              Webアプリケーションコース
-                            </a>
-                          </li> 
-                        </ul>
-                        <ul>
-                          <li>
-                            <a class="btn-course">
-                              <i class="fa fa-fw fa-diamond fa-l"></i>
-                              Webアプリケーションコース
-                            </a>
-                          </li>
-                          <li>
-                            <a class="btn-course">
-                              <i class="fa fa-fw fa-diamond fa-l"></i>
-                              Webアプリケーションコース
-                            </a>
-                          </li>
-                          <li>
-                            <a class="btn-course">
-                              <i class="fa fa-fw fa-diamond fa-l"></i>
-                              Webアプリケーションコース
-                            </a>
-                          </li>
-                          <li>
-                            <a class="btn-course">
-                              <i class="fa fa-fw fa-diamond fa-l"></i>
-                              Webアプリケーションコース
-                            </a>
-                          </li> 
-                        </ul>
-                      </div>
-                    </div>
-                  </li>
-                  <li class="dropdown btn-nav-menu"><a class="link" href="#">セット</a></li>
-                  <li class="dropdown btn-nav-menu"><a class="link" href="#">はじめての方へ</a></li>
-                  <li class="dropdown btn-nav-menu"><a class="link" href="#">転職サポート</a></li>
-                  <li class="dropdown btn-nav-menu"><a class="link for-company" href="#">法人のお客様</a></li>
-                  <li class="dropdown btn-nav-menu"><a class="link log-in" href="#">ログイン</a></li>
-              </ul> 
-          </div>
+    <div class="container">
+      <div class="header-left">
+        <a class="logo" href="#"><img src="./assets/logo.png"></a>
       </div>
+      <div class="header-right">
+        <ul class="nav-bar">
+          <li class="dropdown btn-nav-menu">
+            <a class="link" href="#">コース</a>
+            <div class="dropdown-menu">
+              <div class="btn-nav-heading">
+                <h2>コース</h2>
+                <p>プログラミング・アプリ開発・デザインなど豊富なコースをご用意</p>
+              </div>
+              <div class="btn-nav-inner">
+                <div class="category">
+                  <a href="#">プログラミング</a>
+                </div>
+                <ul>
+                  <li>
+                    <a class="btn-course">
+                      <i class="fa fa-fw fa-diamond fa-l"></i>
+                      Webアプリケーションコース
+                    </a>
+                  </li>
+                  <li>
+                    <a class="btn-course">
+                      <i class="fa fa-fw fa-diamond fa-l"></i>
+                      Webアプリケーションコース
+                    </a>
+                  </li>
+                  <li>
+                    <a class="btn-course">
+                      <i class="fa fa-fw fa-diamond fa-l"></i>
+                      Webアプリケーションコース
+                    </a>
+                  </li>
+                  <li>
+                    <a class="btn-course">
+                      <i class="fa fa-fw fa-diamond fa-l"></i>
+                      Webアプリケーションコース
+                    </a>
+                  </li> 
+                </ul>
+                <ul>
+                  <li>
+                    <a class="btn-course">
+                      <i class="fa fa-fw fa-diamond fa-l"></i>
+                      Webアプリケーションコース
+                    </a>
+                  </li>
+                  <li>
+                    <a class="btn-course">
+                      <i class="fa fa-fw fa-diamond fa-l"></i>
+                      Webアプリケーションコース
+                    </a>
+                  </li>
+                  <li>
+                    <a class="btn-course">
+                      <i class="fa fa-fw fa-diamond fa-l"></i>
+                      Webアプリケーションコース
+                    </a>
+                  </li>
+                  <li>
+                    <a class="btn-course">
+                      <i class="fa fa-fw fa-diamond fa-l"></i>
+                      Webアプリケーションコース
+                    </a>
+                  </li> 
+                </ul>
+              </div>
+            </div>
+          </li>
+          <li class="dropdown btn-nav-menu"><a class="link" href="#">セット</a></li>
+          <li class="dropdown btn-nav-menu"><a class="link" href="#">はじめての方へ</a></li>
+          <li class="dropdown btn-nav-menu"><a class="link" href="#">転職サポート</a></li>
+          <li class="dropdown btn-nav-menu"><a class="link for-company" href="#">法人のお客様</a></li>
+          <li class="dropdown btn-nav-menu"><a class="link log-in" href="#">ログイン</a></li>
+        </ul> 
+      </div>
+    </div>
 
     <!-- 海の日キャンペーン -->
       <section id="campaign">
-        <img src="⁨./assets/title.png" alt="キャンペーン">
+        <img src="⁨~/assets/title.png" alt="キャンペーン">
         <!--  質問：画像が反映されないのは何故？-->
         <p class="campaign-text">
             ブートキャンプの8・１２・16・24週間プランのいずれかに
@@ -95,11 +95,11 @@
 
      <!-- 受賞 -->
     <section class="advs">
-        <div class="award">
+        <div class="adv award">
             <img src="img/awards.png" alt="受賞">
             <p>第１３回日本e-learning大賞<br>プログラミング教育特別部門賞</p>
         </div>
-        <div class="payment">
+        <div class="adv payment">
             <img src="img/bitcoin.png" alt="bit-coin">
             <p>ビットコインで<br>お支払いただけます</p>
         </div>
@@ -324,4 +324,6 @@ export default {
 @import './assets/style/common';
 @import './assets/style/header';
 @import './assets/style/campaign';
+@import './assets/style/advs';
+
 </style>

@@ -1,0 +1,19 @@
+.advs {
+    display: flex;
+    width: 100%;
+    .adv {
+        display: flex;
+        justify-content: center;
+        width: 50%;
+        padding: 15px;
+        font-size: 1.5rem;
+        color: rgb(51, 51, 51);
+        img {
+            width: 100px;
+            margin-right: 15px;
+        }
+        .award {
+            background-color: darkblue;
+        }
+    }
+}
