@@ -1,14 +1,33 @@
+@import "common.scss";
+
 #campaign {
+    display: table;
     width: 100%;
-    height: 500px;
-    background-image: url(https://s3-ap-northeast-1.amazonaws.com/techacademy-bootcamp/promotions/background_images/76/original/bg.jpg?1565316605);
-    background-size: cover;
-    text-align: center;
-    font-size: 1.9rem;
-    color: rgb(51, 51, 51);
-    line-height: 34px;
-    img {
-        width: 650px;
+    padding-top: 70px;
+    .campaign-wrapper {
+        display: table-cell;
+        height: 500px;
+        background-image: url(https://s3-ap-northeast-1.amazonaws.com/techacademy-bootcamp/promotions/background_images/76/original/bg.jpg?1565316605);
+        background-size: cover;
+        text-align: center;
+        vertical-align: middle;
+        font-size: 1.9rem;
+        color: rgb(51, 51, 51);
+        line-height: 1.8;
+        @include pc {
+            width: 100%;
+            padding: 0 15px;
+            font-size: 15px;
+        }
+        img {
+            width: 650px;
+            @include pc {
+                width: 500px;
+            }
+            @include tab {
+                width: 400px;
+            }
+        }
     }
     .campaigned-course {
         display: inline-block;

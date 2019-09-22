@@ -3,15 +3,22 @@
 
 html {
     font-size: 62.5%;
-}
-
-body {
+  }
+  
+  body {
     font-family: "Open Sans", "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, sans-serif;
-    font-size: 1.2rem;
     color: rgb(221, 221, 221);
-}
+    h2, h3 {
+      font-size: 2.6rem;
+      line-height: 1.4;
+    }
+    p {
+      font-size: 1.9rem;
+      line-height: 1.4;
+    }
+  }
 
-*, *::before, *::after {
+  *, *::before, *::after {
     box-sizing: border-box;
 }
 
@@ -21,8 +28,36 @@ a:link, a:visited, a:hover, a:active {
 }
 
 li {
-    list-style: none;
+  list-style: none;
 }
 
+$base-color: #5cb85c;
 
-  
+$pc: 1024px; // PC
+$tab: 680px; // タブレット
+$sp: 480px;  // スマホ
+
+@mixin pc {
+  @media (max-width: ($pc)) {
+    @content;
+  }
+}
+@mixin tab {
+  @media (max-width: ($tab)) {
+    @content;
+    font-size: 1.9rem;
+  }
+}
+@mixin sp {
+  @media (max-width: ($sp)) {
+    @content;
+  }
+}
+
+@mixin hmbg-menu {
+  position: absolute;
+  height: 2px;
+  width: 22px;
+  border-radius: 3px;
+  background: rgb(136, 136, 136);
+}

@@ -1,0 +1,103 @@
+#comparison {
+    background-color: #f1f1f1;
+    .comparison-wrapper {
+        padding: 70px 0;
+        margin: 0 120px;
+        text-align: center;
+        @include pc {
+            margin: 0;
+        }
+        .title-wrapper {
+            margin: 0 0 50px;
+            h2 {
+                margin: 0 0 15px;
+                font-weight: normal;
+                color: #333333;
+                @include pc {
+                    font-size: 1.9rem;
+                }
+            }
+            p {
+                font-size: 1.5rem;
+                color: #777777;
+                @include pc {
+                    font-size: 1.3rem;
+                }
+            }
+        }
+        .comparison-table {
+            width: 100%;
+            max-width: 100%;
+            border-collapse: collapse;
+            th{
+                display: table-cell;
+                padding: 8px;
+                border: 1px solid rgb(221, 221, 221);
+                background-color: rgb(170, 170, 170);
+                vertical-align: middle;
+                font-size: 1.9rem;
+                color: #ffffff;
+                @include pc {
+                    display: block;
+                }
+            }
+            .empty {
+                width: 19%;
+                border-top: none;
+                border-left: none;
+                background-color: transparent;
+                @include pc {
+                    width: 100%;
+                }
+                
+            }
+            .Techacademy {
+                width: 27%;
+                background-color: $base-color;
+                border: 8px solid $base-color;
+                border-bottom: none;
+                @include pc {
+                    width: 100%;
+                }
+                img {
+                    max-width: 216px;
+                }
+            }
+            tr {
+                td {
+                    width: 18%;
+                    display: table-cell;
+                    padding: 8px;
+                    border: 1px solid rgb(221, 221, 221);
+                    vertical-align: middle;
+                    color: #333333;
+                    font-size: 1.5rem;
+                    @include pc {
+                        display: block;
+                        width: 100%;
+                    }
+                }
+                .column {
+                    font-size: 1.5rem;
+                }
+                .Techacademy-detail {
+                    border-left: 8px solid $base-color;
+                    border-right: 8px solid $base-color;
+                    font-size: 1.9rem;
+                    &.last {
+                        border-bottom: 8px solid $base-color;
+                    }
+                    span {
+                        font-size: 1.3rem;
+                    }
+                    i {
+                        color: $base-color;
+                    }
+                }
+            }
+            tr:nth-of-type(even) {
+                background-color: rgb(249, 249, 249);
+            }  
+        }
+    }
+}

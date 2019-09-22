@@ -1,19 +1,66 @@
 .advs {
     display: flex;
     width: 100%;
-    .adv {
+    height: 107px;
+    @include pc {
+        display: block;
+        height: auto;
+
+    }
+    .award {
         display: flex;
+        background-image: url("assets/bg-e-learning-awards-1a2304c8a60f3b142c225e9d41b88ff073ba0df668516eb3eb1149ecefcfc100.jpg");
+        background-size: cover;
+        background-color: darkblue;
         justify-content: center;
+        align-items: center;
         width: 50%;
         padding: 15px;
+        line-height: 1.8;
         font-size: 1.5rem;
-        color: rgb(51, 51, 51);
+        letter-spacing: 0.15rem;
+        font-weight: normal;
+        color: #ffffff;
+        @include pc {
+            width: 100%;
+            justify-content: center;
+            flex-direction: column;
+            font-size: 1.3rem;
+        }
         img {
             width: 100px;
             margin-right: 15px;
+            @include pc {
+                margin: 0 0 10px;
+            }
         }
-        .award {
-            background-color: darkblue;
+    }
+    .adv.payment {
+        display: flex;
+        background-image: url("assets/campaign-bitcoin-bg-46969cf0da4ff31428bd457111ba1d248952bb94f67c18c891ec51f683c1353a.jpg");
+        background-size: cover;
+        justify-content: center;
+        align-items: center;
+        width: 50%;
+        padding: 15px;
+        line-height: 1.8;
+        font-size: 1.5rem;
+        letter-spacing: 0.15rem;
+        font-weight: normal;
+        color: #ffffff;
+        @include pc {
+            width: 100%;
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+            font-size: 1.3rem;
+        }
+        img {
+            width: 160px;
+            margin-right: 15px;
+            @include pc {
+                margin: 0 0 10px;
+            }
         }
     }
 }
